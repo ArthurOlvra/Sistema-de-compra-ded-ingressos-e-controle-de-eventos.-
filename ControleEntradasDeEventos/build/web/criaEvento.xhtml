@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Criando Evento</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:growl showDetail="true" />
+            <p:panel id="panelCriaEvento" header="Crie seu evento">
+                <h:panelGrid columns="2">
+                <p:outputLabel value="Digite o nome do evento: "/>
+                <p:inputText value="#{eventoManagerBean.evento.nome}" required="true"/>
+                <p:outputLabel value="Digite a data do evento: "/>
+                <p:calendar pattern="dd/MM/yyyy" value="#{eventoManagerBean.evento.dataEvento}" required="true"/>                             
+                </h:panelGrid>    
+            <p:commandButton value="Salvar" update="@form"
+                             actionListener="#{eventoManagerBean.salvar()}"/>
+            <p:button href="index.xhtml" value="Voltar"/>        
+            </p:panel>            
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Index</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:dataTable var="item" value="#{pulseiraManagerBean.pulseiras}">
+                <f:facet name="header">
+                    Meus Ingressos
+                </f:facet>
+                <p:column headerText="Ações" width="40">
+                    <p:commandButton icon="ui-icon-trash" actionListener="#{pulseiraManagerBean.desativar()}" update="@form"/>
+                </p:column>
+                <p:column headerText="Id">
+                    <p:outputLabel value="#{item.codigo}"/>
+                </p:column>
+                <p:column headerText="Comprador">                    
+                    <p:outputLabel value="#{item.pessoa.nome}"/>
+                </p:column>
+                <p:column headerText="Evento">
+                    <p:outputLabel value="#{item.evento.nome}"/>
+                </p:column>
+                <p:column headerText="Acesso">
+                    <p:outputLabel value="#{item.acesso}"/>
+                </p:column>
+            </p:dataTable> 
+            <center>
+                <p:button value="Inicio" href="index.xhtml"/>
+            </center>
+        </h:form>
+    </h:body>
+</html>
+
