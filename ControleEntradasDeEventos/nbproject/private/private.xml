@@ -9,11 +9,13 @@
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/managebean/EventoManagerBean.java</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/index.xhtml</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/enums/SexoPessoa.java</file>
+            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/cadastroPessoa.xhtml</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/managebean/PulseiraManagerBean.java</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/modelo/Pulseira.java</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/servico/PulseiraServico.java</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/conf/persistence.xml</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/servico/EventoServico.java</file>
+            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/listarEventos.xhtml</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/modelo/Evento.java</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/criaEvento.xhtml</file>
             <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/listarIngressos.xhtml</file>

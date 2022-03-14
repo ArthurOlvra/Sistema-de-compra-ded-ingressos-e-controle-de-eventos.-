@@ -9,12 +9,16 @@
     </h:head>
     <h:body>
         <h:form>
+            <p:growl id="messages"
+                     showDetail="false"/>
             <p:dataTable var="item" value="#{eventoManagerBean.eventos}">
                 <f:facet name="header">
                     Meus Eventos
                 </f:facet>
                 <p:column headerText="Ações" width="50">
-                    <p:commandButton icon="ui-icon-trash" actionListener="#{pulseiraManagerBean.desativar()}" update="@form"/>
+                    <p:commandButton icon="ui-icon-trash" oncomplete="PF('confirmarRemoverEventoDialog').show();" update="@form" process="@this">
+                        <f:setPropertyActionListener value="#{item}" target="#{eventoManagerBean.evento}"/>
+                    </p:commandButton>
                 </p:column>
                 <p:column headerText="Id">
                     <p:outputLabel value="#{item.id}"/>
@@ -29,6 +33,16 @@
             <center>
                 <p:button value="Inicio" href="index.xhtml"/>
             </center>
+            <p:dialog id='confirmarRemoverEventoDialog' widgetVar="confirmarRemoverEventoDialog" header='deseja realmente excluir este evento?'
+                      modal="true"
+                      resizable="false"
+                      draggable="false"
+                      closeOnEscape="true"
+                      showEffect="fade"
+                      hideEffect="fade">  
+                <p:commandButton value="Sim" icon="ui-icon-check" process="@this" update="@form" actionListener="#{eventoManagerBean.desativar()}"/>
+                <p:commandButton value="Não" icon="ui-icon-close" process="@this" update="@form" oncomplete="PF('confirmarRemoverEventoDialog').hide();"/>
+            </p:dialog>    
         </h:form>
     </h:body>
 </html>

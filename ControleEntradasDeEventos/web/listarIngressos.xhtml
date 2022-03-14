@@ -9,12 +9,16 @@
     </h:head>
     <h:body>
         <h:form>
+            <p:growl id="messages"
+                     showDetail="false"/>
             <p:dataTable var="item" value="#{pulseiraManagerBean.pulseiras}">
                 <f:facet name="header">
                     Meus Ingressos
                 </f:facet>
                 <p:column headerText="Ações" width="40">
-                    <p:commandButton icon="ui-icon-trash" actionListener="#{pulseiraManagerBean.desativar()}" update="@form"/>
+                    <p:commandButton icon="ui-icon-trash" oncomplete="PF('confirmarRemoverPulseiraDialog').show();" update="@form" process="@this">
+                        <f:setPropertyActionListener value="#{item}" target="#{pulseiraManagerBean.pulseira}"/>
+                    </p:commandButton>
                 </p:column>
                 <p:column headerText="Id">
                     <p:outputLabel value="#{item.codigo}"/>
@@ -32,6 +36,16 @@
             <center>
                 <p:button value="Inicio" href="index.xhtml"/>
             </center>
+            <p:dialog id='confirmarRemoverPulseiraDialog' widgetVar="confirmarRemoverPulseiraDialog" header='deseja realmente excluir esta pulseira?'
+                      modal="true"
+                      resizable="false"
+                      draggable="false"
+                      closeOnEscape="true"
+                      showEffect="fade"
+                      hideEffect="fade">  
+                <p:commandButton value="Sim" icon="ui-icon-check" process="@this" update="@form" actionListener="#{pulseiraManagerBean.desativar()}"/>
+                <p:commandButton value="Não" icon="ui-icon-close" process="@this" update="@form" oncomplete="PF('confirmarRemoverPulseiraDialog').hide();"/>
+            </p:dialog>    
         </h:form>
     </h:body>
 </html>

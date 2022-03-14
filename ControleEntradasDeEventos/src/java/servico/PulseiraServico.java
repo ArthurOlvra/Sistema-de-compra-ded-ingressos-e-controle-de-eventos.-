@@ -27,11 +27,7 @@ public class PulseiraServico extends ServicoGenerico<Pulseira>{
     @PersistenceContext
     EntityManager em;
     
-    @Override
-    public void delete(Pulseira p){
-        p.setAtivo(false);
-        super.delete(p);
-    }
+    
 
     
     

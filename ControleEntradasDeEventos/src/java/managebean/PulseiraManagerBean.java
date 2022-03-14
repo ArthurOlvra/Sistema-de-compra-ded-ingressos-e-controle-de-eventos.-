@@ -20,6 +20,7 @@ import modelo.Pulseira;
 import servico.EventoServico;
 import servico.PessoaServico;
 import servico.PulseiraServico;
+import utilitario.Mensagem;
 
 
 /**
@@ -83,7 +84,7 @@ public class PulseiraManagerBean implements Serializable{
         this.pulseira = new Pulseira();
     }
     
-    public void removerEvento(Pulseira item){
+    public void removerPulseira(Pulseira item){
         this.pulseiras.remove(item);
     }   
 
@@ -118,14 +119,11 @@ public class PulseiraManagerBean implements Serializable{
     public void setPulseiras(List<Pulseira> pulseiras) {
         this.pulseiras = pulseiras;
     }
-    
-    public void ativar(){
-        this.pulseira.setAtivo(false);
-        pulseiraServico.atualizar(pulseira);
-    }
-    
+        
     public void desativar(){
-        pulseiraServico.delete(this.pulseira);
+        this.pulseira.setAtivo(false);
+        pulseiraServico.atualizar(this.pulseira);
+        Mensagem.successAndRedirect("Operação realizada com sucesso!", "listarIngressos.xhtml");
     }
     
     public List<Evento> autoCompleteEventos(){
