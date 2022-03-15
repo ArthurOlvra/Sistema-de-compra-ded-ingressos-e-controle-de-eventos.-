@@ -8,12 +8,13 @@
     </h:head>
     <h:body>
         <h:form>
-            <p:growl showDetail="true" />
+            <p:growl id="messages"
+                     showDetail="false"/>
             <p:panel id="panelCriaEvento" header="Crie seu evento">
                 <h:panelGrid columns="2">
                 <p:outputLabel value="Digite o nome do evento: "/>
                 <p:inputText value="#{eventoManagerBean.evento.nome}" required="true"/>
-                <p:outputLabel value="Digite a data do evento: "/>
+                <p:outputLabel value="Informe a data do evento: "/>
                 <p:calendar pattern="dd/MM/yyyy" value="#{eventoManagerBean.evento.dataEvento}" required="true"/>                             
                 </h:panelGrid>    
             <p:commandButton value="Salvar" update="@form"

@@ -59,4 +59,8 @@ public class ServicoGenerico<T> {
         return entity;
     }
     
+    public Long count(){        
+        return(Long)em.createQuery("select count(o) from " + entity.getSimpleName() + " o WHERE o.ativo = true ").getSingleResult();
+    }
+    
 }

@@ -5,7 +5,7 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>Index</title>
+        <title>Listagem de eventos</title>
     </h:head>
     <h:body>
         <h:form>
@@ -42,7 +42,8 @@
                       hideEffect="fade">  
                 <p:commandButton value="Sim" icon="ui-icon-check" process="@this" update="@form" actionListener="#{eventoManagerBean.desativar()}"/>
                 <p:commandButton value="Não" icon="ui-icon-close" process="@this" update="@form" oncomplete="PF('confirmarRemoverEventoDialog').hide();"/>
-            </p:dialog>    
+            </p:dialog>
+            <p:commandButton value="Número de eventos ativos" update="@form" actionListener="#{eventoManagerBean.contar()}"/>
         </h:form>
     </h:body>
 </html>

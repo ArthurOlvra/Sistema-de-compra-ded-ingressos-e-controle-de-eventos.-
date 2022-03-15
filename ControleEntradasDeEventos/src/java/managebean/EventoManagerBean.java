@@ -15,7 +15,6 @@ import javax.faces.bean.ViewScoped;
 import modelo.Evento;
 import servico.EventoServico;
 import utilitario.Mensagem;
-import utilitario.MensagemSimples;
 
 /**
  *
@@ -39,7 +38,7 @@ public class EventoManagerBean implements Serializable{
     
     public void salvar(){
         eventoServico.salvar(evento);
-        MensagemSimples.mensagemInfo("Evento" + evento.getNome() + "salvo com sucesso");
+        Mensagem.success("Evento ("+ this.evento.getNome() + ") registrado com sucesso");
         this.evento = new Evento();
     }
     
@@ -76,6 +75,10 @@ public class EventoManagerBean implements Serializable{
         this.evento.setAtivo(false);
         eventoServico.atualizar(this.evento);
         Mensagem.successAndRedirect("Operação realizada com sucesso!", "listarEventos.xhtml");
+    }
+    
+    public void contar(){
+        Mensagem.success("O numero de eventos ativos é: " + eventoServico.count());
     }
     
 }

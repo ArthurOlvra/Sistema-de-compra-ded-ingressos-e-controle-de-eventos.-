@@ -3,27 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/conversor/ConversorEvento.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/compraIngresso.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/modelo/Pessoa.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/managebean/EventoManagerBean.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/index.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/enums/SexoPessoa.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/cadastroPessoa.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/managebean/PulseiraManagerBean.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/modelo/Pulseira.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/servico/PulseiraServico.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/conf/persistence.xml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/servico/EventoServico.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/listarEventos.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/modelo/Evento.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/criaEvento.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/web/listarIngressos.xhtml</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/managebean/PessoaManagerBean.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/utilitario/Mensagem.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/enums/TipoAcesso.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/servico/PessoaServico.java</file>
-            <file>file:/home/arthur/NetBeansProjects/ControleEntradasDeEventos/src/java/generico/ServicoGenerico.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/compraIngresso.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/utilitario/Mensagem.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/generico/ServicoGenerico.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/managebean/PessoaManagerBean.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/listarEventos.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/enums/TipoAcesso.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/listarIngressos.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/cadastroPessoa.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/modelo/Evento.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/criaEvento.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/servico/EventoServico.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/managebean/PulseiraManagerBean.java</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/web/index.xhtml</file>
+            <file>file:/home/arthur/NetBeansProjects/Sistema-de-compra-ded-ingressos-e-controle-de-eventos.-/ControleEntradasDeEventos/src/java/managebean/EventoManagerBean.java</file>
         </group>
     </open-files>
 </project-private>

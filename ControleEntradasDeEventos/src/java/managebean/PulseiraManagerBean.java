@@ -68,6 +68,7 @@ public class PulseiraManagerBean implements Serializable{
     
     public void salvar(){
         pessoaServico.salvar(this.p);
+        Mensagem.success("Operação realizada com sucesso");
         pessoaServico.find(this.p.getId());
         this.pulseira.setPessoa(this.p);
         pulseiraServico.salvar(this.pulseira);
@@ -129,4 +130,9 @@ public class PulseiraManagerBean implements Serializable{
     public List<Evento> autoCompleteEventos(){
         return eventoServico.findAll();
     }
+    
+    public void contar(){
+        Mensagem.success("O numero de ingressos vendidos é: " + pulseiraServico.count());
+    }
+    
 }

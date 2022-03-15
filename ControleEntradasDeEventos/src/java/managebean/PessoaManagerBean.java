@@ -13,6 +13,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import modelo.Pessoa;
 import servico.PessoaServico;
+import utilitario.Mensagem;
 
 /**
  *
@@ -35,6 +36,7 @@ public class PessoaManagerBean {
     
     public void salvar(){
         pessoaServico.salvar(pessoa);
+        Mensagem.success("Pessoa (" + this.pessoa.getNome() + ") cadastrada com socesso");
         this.pessoa = new Pessoa();
     }
     
@@ -76,4 +78,5 @@ public class PessoaManagerBean {
         this.pessoa.setAtivo(false);
         pessoaServico.atualizar(pessoa);
     }
+    
 }
